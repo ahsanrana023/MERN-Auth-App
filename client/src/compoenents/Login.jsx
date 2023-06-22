@@ -27,7 +27,9 @@ const Login = () => {
     } catch (error) {
       // Handle login errors
       console.error(error);
-      window.alert("Failed to log in. Please check your credentials.");
+      window.alert(
+        "Failed to log in. Please check your credentials." + error.message
+      );
     }
   }
   return (
