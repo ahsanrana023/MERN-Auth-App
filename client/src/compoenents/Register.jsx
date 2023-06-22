@@ -9,7 +9,7 @@ const Register = () => {
   async function registerUser(e) {
     e.preventDefault();
     try {
-      await axios.post("/register", {
+      await axios.post("https://mern-auth-app-bay.vercel.app//register", {
         name,
         email,
         password,

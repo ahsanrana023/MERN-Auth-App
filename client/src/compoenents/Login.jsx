@@ -8,10 +8,13 @@ const Login = () => {
   async function loginUser(e) {
     e.preventDefault();
     try {
-      const response = await axios.post("/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://mern-auth-app-bay.vercel.app//login",
+        {
+          email,
+          password,
+        }
+      );
 
       // Assuming the response contains a token
       const { token } = response.data;

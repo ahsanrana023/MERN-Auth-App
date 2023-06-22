@@ -8,7 +8,7 @@ import axios from "axios";
 import Dashboard from "./compoenents/Dashboard";
 import Footer from "./compoenents/Footer";
 function App() {
-  axios.defaults.baseURL = "http://localhost:5000";
+  // axios.defaults.baseURL = "http://localhost:5000";
   return (
     <Router>
       <Navbar />
